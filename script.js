@@ -33,9 +33,7 @@ criarLista();
 // Função criarLista: Atualiza o conteúdo da lista na tela com a sequência de Fibonacci atual.
 function criarLista() {
   let listaFibonacci = document.getElementById("listaFibonacci");
-  listaFibonacci.innerText = `Sequência de Fibonacci: ${fibonacciArray.join(
-    ","
-  )}`;
+  listaFibonacci.innerText = `${fibonacciArray.join(",")}`;
 }
 
 // Adiciona o próximo número da sequência de Fibonacci ao array e atualiza a lista na tela.
