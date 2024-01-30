@@ -21,9 +21,9 @@ h1 {
   text-align: center;
 }
 section {
-  width: 100vw;
+  width: 40vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 button {
   height: 7vh;
@@ -33,7 +33,7 @@ button {
   border: none;
   color: white;
   font-size: 16px;
-  display: inline-block;
+
   background-color: #04aa6d;
 }
 ul {

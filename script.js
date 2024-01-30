@@ -7,14 +7,14 @@ let fibonacciArray = [];
 
 // Função para gerar a sequência.
 function gerarSequenciaDeFibonacci(numero) {
-  // se o número for menor ou igual a 1, a função retorna 1.
+  // a sequência inicia em 0 e 1.
+  // se o número for menor ou igual a 1, a função retorna o número;
   if (numero <= 1) {
     return numero;
     // se o número for maior que 1 a função segue os comandos do bloco 2.
   } else {
     // a partir daqui, iniciaremos a sequência de Fibonacci.
-    // a sequência inicia em 0 e 1.
-    // número -1 chama a função para calcular o nº anterior na sequência.
+    // número -1 chama a função para calcular o nº anterior na sequência, o "resto".
     // número -2, soma o resultado a duas posições anteriores.
     return (
       gerarSequenciaDeFibonacci(numero - 1) +
