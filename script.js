@@ -28,21 +28,19 @@ function gerarSequenciaDeFibonacci(numero) {
     );
   }
 }
-criarLista();
 
-// Função criarLista: Atualiza o conteúdo da lista na tela com a sequência de Fibonacci atual.
-function criarLista() {
+function exibirSequencia() {
   let listaFibonacci = document.getElementById("listaFibonacci");
-  listaFibonacci.innerText = `${fibonacciArray.join(",")}`;
+  listaFibonacci.innerText = `${fibonacciArray.join(", ")}`;
 }
 
 // Adiciona o próximo número da sequência de Fibonacci ao array e atualiza a lista na tela.
 let botaoAdicionar = document.getElementById("btn_Add");
 botaoAdicionar.addEventListener("click", function () {
   // Adiciona o próximo número da sequência de Fibonacci ao array.
-  let novoNumero = gerarSequenciaDeFibonacci(fibonacciArray.length);
-  fibonacciArray.push(novoNumero);
-  criarLista();
+  let btnClicado = gerarSequenciaDeFibonacci(fibonacciArray.length);
+  fibonacciArray.push(btnClicado);
+  exibirSequencia();
 });
 
 // Remove o último número da sequência de Fibonacci do array e atualiza a lista na tela.
@@ -50,5 +48,5 @@ let botaoRemover = document.getElementById("btn_Remove");
 // Remove o último número da sequência de Fibonacci do array.
 botaoRemover.addEventListener("click", function () {
   fibonacciArray.pop();
-  criarLista();
+  exibirSequencia();
 });

@@ -15,7 +15,6 @@ body {
 }
 
 h1 {
-  color: rgb(15, 15, 16);
   font-size: 50px;
   font-family: "Satisfy", cursive;
   text-align: center;
@@ -36,11 +35,8 @@ button {
 
   background-color: #04aa6d;
 }
-ul {
-  margin-top: 7px;
-  list-style: none;
-}
-li {
+p {
+  width: 40vw;
   color: rgb(9, 9, 9);
   text-align: center;
   margin-top: 4px;
